@@ -1,0 +1,71 @@
+:root {
+--c1 : #6d597a;
+--c2 : #b56576;
+--c3 : #eaac7b;
+--c4 : #fff;
+--c5 : #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  width: 100%;
+  display: flex;
+}
+header, footer {
+  background-color: var(--c1);
+  color: var(--c4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+aside { 
+  background-color: var(--c2);
+  display: flex;
+  flex-direction: column;
+  width:40%;
+  height: 500px;
+  gap: 10px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 10px;
+  
+}
+aside a {
+  color: var(--c5);
+  text-decoration: none;
+  display: flex;
+  flex-basis: 30px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  padding-top: 100px;
+  padding-left: 100px;
+  
+}
+
+.card {
+  background-color: var(--c3);
+  justify-content: center;
+  display: flex;
+  width: 650px;
+  height: 100px;
+  align-items: center;
+  flex-shrink: 0; 
+}
+
+.card:nth-child(2),.card:first-child {
+  align-self: flex-end;
+}
+
+.card:nth-child(3), .card:last-child{
+  align-self: flex-start;
+}
